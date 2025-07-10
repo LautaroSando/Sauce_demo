@@ -1,0 +1,23 @@
+{
+
+    "userValido":{ 
+        "user" : "standard_user",
+        "password" : "secret_sauce"
+    },
+
+    "userInvalid": {
+        "user" : "standard_user",
+        "password" : "invalid"
+    },
+
+    "userLocked" :{
+        "user": "locked_out_user",
+        "password" : "secret_sauce"
+    },
+
+    "userEmpty" :{
+        "user": "",
+        "password" : ""
+    }
+
+}
