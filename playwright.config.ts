@@ -12,7 +12,7 @@ export default defineConfig({
 
   use: {
     //baseURL: 'https://www.saucedemo.com',
-    headless: false,
+    headless: true,
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
     video: 'retain-on-failure', // guarda video si falla
