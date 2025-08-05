@@ -8,7 +8,7 @@ export default defineConfig({
   },
   fullyParallel: true,
   retries: 0, // 0 = no reintenta si falla
-  workers: undefined, // usa número de CPUs disponibles
+  workers: 1, // usa número de CPUs disponibles
 
   use: {
     //baseURL: 'https://www.saucedemo.com',
