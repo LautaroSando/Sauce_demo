@@ -1,4 +1,3 @@
-
 # SauceDemo Automation Project
 
 Automatización de pruebas para el sitio [SauceDemo](https://www.saucedemo.com/) usando **Playwright** y **TypeScript**, con patrón **Page Object Model (POM)**.
@@ -12,6 +11,7 @@ sauce_demo/
 ├── pages/                  # Clases que representan páginas (POM)
 ├── tests/                  # Casos de prueba automatizados
 ├── data/                   # Datos de prueba y mensajes
+├── .github/workflows/      # Workflows de GitHub Actions (CI/CD)
 ├── playwright.config.ts    # Configuración de Playwright
 ├── package.json            # Dependencias y scripts
 └── README.md               # Documentación del proyecto
@@ -24,6 +24,7 @@ sauce_demo/
 - Playwright  
 - TypeScript  
 - Node.js  
+- GitHub Actions (CI/CD)  
 
 ---
 
@@ -39,8 +40,8 @@ sauce_demo/
 ## Instalación
 
 ```bash
-git clone https://github.com/tu_usuario/sauce_demo.git
-cd sauce_demo
+git clone https://github.com/LautaroSando/Sauce_demo.git
+cd Sauce_demo
 npm install
 ```
 
@@ -65,6 +66,20 @@ Abrir reporte visual tras ejecución:
 ```bash
 npx playwright show-report
 ```
+
+---
+
+## Integración Continua (CI/CD)
+
+Este proyecto utiliza **GitHub Actions** para ejecutar automáticamente los tests en cada `push` o `pull request` hacia la rama `main`.
+
+Esto garantiza que los cambios no rompan los tests existentes antes de integrarlos.
+
+El archivo del workflow está en `.github/workflows/test.yml` y realiza:
+
+- Instalación de dependencias  
+- Ejecución de tests con Playwright  
+- Verificación del resultado  
 
 ---
 
