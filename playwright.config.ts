@@ -11,14 +11,14 @@ export default defineConfig({
   workers: 1, // usa número de CPUs disponibles
 
   use: {
-    //baseURL: 'https://www.saucedemo.com',
+    baseURL: 'https://www.saucedemo.com',
     headless: true,
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
     video: 'retain-on-failure', // guarda video si falla
     screenshot: 'only-on-failure', // screenshot si falla
     actionTimeout: 0,
-    trace: 'on-first-retry', // guarda trace si hay retries
+    trace: 'retain-on-failure', // guarda trace si falla
   },
 
   projects: [
