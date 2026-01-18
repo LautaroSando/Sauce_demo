@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/LautaroSando/Sauce_demo#readme",
   "devDependencies": {
-    "@playwright/test": "^1.53.2"
+    "@playwright/test": "^1.55.0"
   },
   "dependencies": {
     "typescript": "^5.8.3"
